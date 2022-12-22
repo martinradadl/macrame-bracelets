@@ -1,0 +1,16 @@
+
+.details-container {
+    display: flex;
+    margin: 5px;
+    height: fit-content;
+}
+
+.details {
+    margin: 5px 5px;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.details p {
+    margin: 2px;
+}

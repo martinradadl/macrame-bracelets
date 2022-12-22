@@ -1,0 +1,21 @@
+.btn-component {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Quicksand", sans-serif;
+    height: 24px;
+    margin: 8px;
+    transition: .7s;
+}
+
+.btn-component:hover {
+    color: var(--gray);
+}

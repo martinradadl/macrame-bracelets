@@ -1,0 +1,26 @@
+.sel-br-container {
+    width: 400px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--gray);
+}
+
+.button {
+    background-color: var(--black);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Quicksand", sans-serif;
+    color: var(--white);
+    height: 25px;
+    transition: .7s;
+}
+
+.button:hover {
+    color: var(--gray);
+}

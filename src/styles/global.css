@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
+
+:root {
+    --black: #302c2c;
+    --gray: #786e6f;
+    --white: #faf4f5;
+}
+
+body {
+    place-items: center;
+    font-family: "Quicksand", sans-serif !important;
+    background-color: var(--gray) !important;
+    color: var(--white)!important;
+}
+
+.sel-bracelet-modal .ant-modal-header {
+    background-color: var(--black);
+    border: none;
+}
+
+.sel-bracelet-modal .ant-modal-title {
+    color: var(--white);
+}

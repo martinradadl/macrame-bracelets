@@ -1,0 +1,39 @@
+.compl-order-container {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.compl-order-title {
+    margin: 30px auto;
+}
+
+.compl-order-descr {
+    margin-bottom: 30px;
+    color: var(--black);
+    font-size: large;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.labels {
+    color: var(--black);
+    font-size: large;
+    display: flex;
+    flex: 1;
+}
+
+.input {
+    display: flex;
+    flex: 3;
+    background-color: var(--white);
+    color: var(--black);
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+    margin: 4px;
+}

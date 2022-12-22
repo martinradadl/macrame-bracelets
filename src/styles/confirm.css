@@ -1,0 +1,13 @@
+.confirm-container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+
+.confirm-descr {
+    text-align: center;
+    margin: 20px auto;
+    color: var(--black);
+    font-size: large;
+}

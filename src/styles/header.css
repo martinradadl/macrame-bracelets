@@ -1,0 +1,52 @@
+@import "./global.css";
+nav {
+    position: static;
+    background-color: var(--black);
+    border-radius: 0 0 8px 8px;
+    padding: 2px 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-height: 80px;
+}
+
+a {
+    color: var(--white)!important;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: .7s;
+}
+
+a:hover {
+    color: var(--gray)!important;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+#menu-icon {
+    background-color: var(--black);
+    border-color: var(--black);
+    display: none;
+}
+
+#logo {
+    max-height: 75px;
+    max-width: 75px;
+}
+
+@media (max-width: 530px) {
+    .menu {
+        display: none;
+    }
+
+    #menu-icon {
+        display: flex;
+    }
+}
