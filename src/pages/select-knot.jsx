@@ -8,7 +8,6 @@ export const SelectKnot = () => {
     <div>
       <h2 class="sel-knot-descr">Escoge un patrón: </h2>
       {Object.keys(knots).map((knot, index) => {
-        console.log(knot)
         return <Knot knot={knots[knot]} key={index} />;
       })}
     </div>
