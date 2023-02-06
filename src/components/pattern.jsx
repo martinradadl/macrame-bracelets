@@ -2,8 +2,11 @@ import React from "react";
 import "../styles/select-knot.css";
 import { Link } from "react-router-dom";
 import { BraceletImg } from "./bracelet-img";
+import { priceCalculator } from "../data/helpers";
 
-const Pattern = () => {
+const Pattern = (props) => {
+  const { pattern, knot } = props;
+  console.log(knot, pattern)
   return (
     <div class="pattern">
       <Link to="/select-details">
@@ -13,8 +16,12 @@ const Pattern = () => {
         </div>
       </Link>
       <div class="info">
-        <h4>Básico</h4>
-        <p>desde $8000</p>
+        <h4>{pattern.name}</h4>
+        <p>
+          {knot.name === "Festón"
+            ? `desde ${priceCalculator(knot, pattern.name, false, 4)}`
+            : priceCalculator(knot, pattern.name, false, 1)}
+        </p>
       </div>
     </div>
   );

@@ -40,6 +40,12 @@ import brlet33 from "./imgs/gallery/33.jpg";
 import brlet34 from "./imgs/gallery/34.jpg";
 import brlet35 from "./imgs/gallery/35.jpg";
 import brlet36 from "./imgs/gallery/36.jpg";
+import brlet37 from "./imgs/gallery/37.jpg";
+import brlet38 from "./imgs/gallery/38.jpg";
+import brlet39 from "./imgs/gallery/39.jpg";
+import brlet40 from "./imgs/gallery/40.jpg";
+import brlet41 from "./imgs/gallery/41.jpg";
+import brlet42 from "./imgs/gallery/42.jpg";
 
 export { inStockImg };
 export { personalizeImg };
@@ -83,5 +89,11 @@ export {
   brlet33,
   brlet34,
   brlet35,
-  brlet36
+  brlet36,
+  brlet37,
+  brlet38,
+  brlet39,
+  brlet40,
+  brlet41,
+  brlet42
 };
