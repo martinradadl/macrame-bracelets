@@ -6,7 +6,6 @@ import { priceCalculator } from "../data/helpers";
 
 const Pattern = (props) => {
   const { pattern, knot } = props;
-  console.log(knot, pattern)
   return (
     <div class="pattern">
       <Link to="/select-details">
