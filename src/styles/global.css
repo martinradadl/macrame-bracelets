@@ -21,3 +21,20 @@ body {
 .sel-bracelet-modal .ant-modal-title {
     color: var(--white);
 }
+
+.ant-select-dropdown {
+    background-color: var(--black)!important;
+}
+
+.ant-select-item-option-selected {
+    background-color: var(--gray)!important;
+}
+
+.ant-select-item-option-active {
+    background-color: var(--gray)!important;
+}
+
+.ant-select-selector {
+    background-color: var(--black)!important;
+    height: 12px !important;
+}

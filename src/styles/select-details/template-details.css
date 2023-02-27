@@ -1,0 +1,10 @@
+.template-colors-list {
+    max-height: 90px;
+    width: 80px;
+    overflow: auto;
+    margin: 0 auto;
+}
+
+.color-square {
+    margin: 2.5px 0;
+}

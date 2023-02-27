@@ -1,14 +1,13 @@
 import React from "react";
 
-export const ColorSquare = (props) => {
-  const { color, isRectangle } = props;
+export const CarouselColorSquare = (color) => {
   return (
     <div
       title={color.label}
       style={{
         backgroundColor: color.value,
-        minHeight: "12px",
-        minWidth: isRectangle? "auto" : "12px",
+        height: "12px",
+        width: "12px",
         border: "1px solid white",
         margin: 1,
       }}

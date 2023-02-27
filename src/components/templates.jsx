@@ -1,13 +1,24 @@
-import React from 'react'
-import '../styles/select-details.css'
-import { BraceletImg } from './bracelet-img'
+import React from "react";
+import "../styles/select-details/index.css";
+import { BraceletImg } from "./bracelet-img";
+import { getBraceletImgFromTemplates } from "../data/helpers";
 
-const Templates = () => {
-    return (<div class="templates-container">
-        <BraceletImg />
-        <BraceletImg />
-        <BraceletImg />
-    </div>)
-}
+const Templates = (props) => {
+  const { pattern, onClick } = props;
+  return (
+    <div class="templates-container">
+      {pattern.templates.map((template) => {
+        return (
+          <div onClick={() => onClick(template)}>
+            <div className="template-img-container">
+              <BraceletImg brImg={getBraceletImgFromTemplates(template)} />
+              <div className="template-bg"></div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
 
-export { Templates }
+export { Templates };

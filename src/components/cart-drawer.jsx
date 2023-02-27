@@ -13,7 +13,6 @@ export const CartDrawer = () => {
   const cart=useSelector((state)=>state.cart)
   const navigate = useNavigate();
   const { showDrawer, onClose, open } = useDrawer();
-  console.log(cart)
   return (
     <div>
       <Button id="cart-icon" type="primary" onClick={showDrawer}>
