@@ -2,7 +2,6 @@ import logo from "./imgs/logo.png";
 import inStockImg from "./imgs/in-stock.jpg";
 import personalizeImg from "./imgs/design.jpg";
 import galleryImg from "./imgs/gallery.jpg";
-import br1 from "./imgs/gallery/10.jpg";
 
 import brlet1 from "./imgs/gallery/1.jpg";
 import brlet2 from "./imgs/gallery/2.jpg";
@@ -46,12 +45,31 @@ import brlet39 from "./imgs/gallery/39.jpg";
 import brlet40 from "./imgs/gallery/40.jpg";
 import brlet41 from "./imgs/gallery/41.jpg";
 import brlet42 from "./imgs/gallery/42.jpg";
+import brlet43 from "./imgs/gallery/43.jpg";
+import brlet44 from "./imgs/gallery/44.jpg";
+import brlet45 from "./imgs/gallery/45.jpg";
+import brlet46 from "./imgs/gallery/46.jpg";
+import brlet47 from "./imgs/gallery/47.jpg";
+import brlet48 from "./imgs/gallery/48.jpg";
+import brlet49 from "./imgs/gallery/49.jpg";
+import brlet50 from "./imgs/gallery/50.jpg";
+import brlet51 from "./imgs/gallery/51.jpg";
+import brlet52 from "./imgs/gallery/52.jpg";
+import brlet53 from "./imgs/gallery/53.jpg";
+import brlet54 from "./imgs/gallery/54.jpg";
+import brlet55 from "./imgs/gallery/55.jpg";
+import brlet56 from "./imgs/gallery/56.jpg";
+import brlet57 from "./imgs/gallery/57.jpg";
+import brlet58 from "./imgs/gallery/58.jpg";
+import brlet59 from "./imgs/gallery/59.jpg";
+import brlet60 from "./imgs/gallery/60.jpg";
+import brlet61 from "./imgs/gallery/61.jpg";
+import brlet62 from "./imgs/gallery/62.jpg";
 
 export { inStockImg };
 export { personalizeImg };
 export { galleryImg };
 export { logo };
-export { br1 };
 
 export {
   brlet1,
@@ -95,5 +113,25 @@ export {
   brlet39,
   brlet40,
   brlet41,
-  brlet42
+  brlet42,
+  brlet43,
+  brlet44,
+  brlet45,
+  brlet46,
+  brlet47,
+  brlet48,
+  brlet49,
+  brlet50,
+  brlet51,
+  brlet52,
+  brlet53,
+  brlet54,
+  brlet55,
+  brlet56,
+  brlet57,
+  brlet58,
+  brlet59,
+  brlet60,
+  brlet61,
+  brlet62
 };

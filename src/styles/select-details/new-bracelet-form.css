@@ -1,0 +1,22 @@
+.ant-select.ant-select-single.ant-select-open {
+    width: 80px;
+}
+
+.p-carousel-item {
+    width: 13px;
+}
+
+.p-carousel-container {
+    height: 16px;
+    max-width: 160px;
+}
+
+.p-carousel-next.p-link {
+    height: 14px!important;
+    width: 14px!important;
+}
+
+.p-carousel-prev.p-link{
+    height: 14px!important;
+    width: 14px!important;
+}

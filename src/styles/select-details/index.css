@@ -1,0 +1,114 @@
+.sel-template-container {
+  margin: 20px;
+}
+
+.templates-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.templates-container img {
+  border-radius: 4px;
+}
+
+.template-img-container {
+  position: relative;
+  height: 160px;
+  width: 90px;
+}
+
+.template-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 2px;
+  left: 2px;
+  background-color: var(--gray);
+  opacity: 0;
+  transition: 0.7s;
+  z-index: 500;
+}
+
+.template-bg:hover {
+  opacity: 0.5;
+}
+
+.sel-details-container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 30px 30px;
+}
+
+.sel-details {
+  display: flex;
+  flex-direction: row;
+}
+
+.sel-details img {
+  border-radius: 4px;
+}
+
+.model-details {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--black);
+  color: var(--white);
+  width: 150px;
+  height: 242px;
+  border-radius: 4px;
+  margin: 2px;
+  padding: 4px;
+}
+
+.model-details h3 {
+  color: var(--white);
+  font-weight: bold;
+}
+
+.title {
+  text-align: center;
+}
+
+.knot-details {
+  text-align: center;
+  margin: 0;
+}
+
+.material {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#br-width {
+  margin-top: 0px;
+  font-size: small;
+}
+
+.colors-details {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.colors-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 90px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.buttons-container {
+  display: flex;
+}
+
+#material-selector {
+  height: 24px;
+  background-color: var(--black);
+  color: var(--white);
+  font-family: "Quicksand", sans-serif;
+  border-radius: 3px;
+}
