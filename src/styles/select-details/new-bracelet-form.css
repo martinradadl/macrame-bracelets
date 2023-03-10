@@ -8,15 +8,31 @@
 
 .p-carousel-container {
     height: 16px;
-    max-width: 160px;
+    max-width: 120px;
 }
 
 .p-carousel-next.p-link {
+    margin: 0px!important;
     height: 14px!important;
     width: 14px!important;
 }
 
 .p-carousel-prev.p-link{
+    margin: 0px!important;
     height: 14px!important;
     width: 14px!important;
 }
+
+.select-num-cords-container {
+    display: flex;
+    margin: 10px auto 0px;
+    gap: 10px;
+}
+
+.num-cords-selector {
+    height: 24px;
+    background-color: var(--black);
+    color: var(--white);
+    font-family: "Quicksand", sans-serif;
+    border-radius: 3px;
+  }
