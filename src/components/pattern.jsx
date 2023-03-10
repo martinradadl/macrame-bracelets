@@ -12,8 +12,7 @@ const Pattern = (props) => {
     <div class="pattern">
       <div
         onClick={() => {
-          navigate("/select-details",
-          {state:{pattern, knot}});
+          navigate("/select-details", { state: { pattern, knot } });
         }}
       >
         <div className="img-container">

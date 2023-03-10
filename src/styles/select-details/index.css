@@ -81,7 +81,7 @@
   margin-bottom: 0;
 }
 
-#br-width {
+#cord-width {
   margin-top: 0px;
   font-size: small;
 }
@@ -99,6 +99,8 @@
   max-height: 90px;
   width: 100%;
   margin: 0 auto;
+  overflow-y: auto;
+  overflow-x: auto;
 }
 
 .buttons-container {

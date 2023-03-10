@@ -193,6 +193,16 @@ export const braceletColors = {
   cyan: { label: "Cián", value: colors.cyan },
 };
 
+const newBracelet = {
+  id: "",
+  image: null,
+  inStock: false,
+  knot: null,
+  pattern: null,
+  material: null,
+  colors: [],
+};
+
 export const rawBracelets = [
   {
     id: "1",
@@ -232,14 +242,14 @@ export const rawBracelets = [
     colors: [
       { label: "Púrpura", value: colors.purple },
       { label: "Azul", value: colors.blue },
-      { label: "Rosado", value: colors.pink },
+      { label: "Fucsia", value: colors.fuchsia },
       { label: "Púrpura", value: colors.purple },
       { label: "Azul", value: colors.blue },
-      { label: "Rosado", value: colors.pink },
-      { label: "Rosado", value: colors.pink },
+      { label: "Fucsia", value: colors.fuchsia },
+      { label: "Fucsia", value: colors.fuchsia },
       { label: "Azul", value: colors.blue },
       { label: "Púrpura", value: colors.purple },
-      { label: "Rosado", value: colors.pink },
+      { label: "Fucsia", value: colors.fuchsia },
       { label: "Azul", value: colors.blue },
       { label: "Púrpura", value: colors.purple },
     ],
@@ -750,10 +760,10 @@ export const rawBracelets = [
     material: "Hilo Chino",
     colors: [
       { label: "Azul", value: colors.blue },
-      { label: "Rosado", value: colors.pink },
+      { label: "Fucsia", value: colors.fuchsia },
       { label: "Gris", value: colors.gray2 },
       { label: "Azul", value: colors.blue },
-      { label: "Rosado", value: colors.pink },
+      { label: "Fucsia", value: colors.fuchsia },
       { label: "Gris", value: colors.gray2 },
     ],
   },
@@ -857,10 +867,10 @@ export const rawBracelets = [
     pattern: "Switch",
     material: "Hilo Chino",
     colors: [
-      { label: "Rosado", value: colors.pink },
       { label: "Fucsia", value: colors.fuchsia },
+      { label: "Morado", value: colors.purple },
+      { label: "Morado", value: colors.purple },
       { label: "Fucsia", value: colors.fuchsia },
-      { label: "Rosado", value: colors.pink },
     ],
   },
   {

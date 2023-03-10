@@ -1,14 +1,16 @@
 import React from "react";
 
-export const CarouselColorSquare = (color) => {
+export const CarouselColorSquare = (props) => {
+  const { color, isSelected, onClick } = props;
   return (
     <div
+      onClick={onClick}
       title={color.label}
       style={{
         backgroundColor: color.value,
         height: "12px",
         width: "12px",
-        border: "1px solid white",
+        border: isSelected ? "2px solid green" : "1px solid white",
         margin: 1,
       }}
     ></div>

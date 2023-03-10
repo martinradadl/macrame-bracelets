@@ -8,30 +8,37 @@ import {
   getBraceletFromId,
   getBraceletImgFromTemplates,
 } from "../data/helpers";
-import "../styles/select-details/index.css"
+import "../styles/select-details/index.css";
 
 export const SelectDetails = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const { knot, pattern } = location.state;
-  const [selectedTemplate, setSelectedTemplate] = useState(pattern.templates[0]);
+  const [selectedTemplate, setSelectedTemplate] = useState(
+    pattern.templates[0]
+  );
   const handleSelectedTemplate = (id) => {
     setSelectedTemplate(id);
   };
-  console.log(selectedTemplate);
   return (
     <div>
       <div className="sel-template-container">
         <div class="descr">
           <h2>
-            <b>Nudo {knot.name}, Patrón {pattern.name}</b>
+            <b>
+              Nudo {knot.name}, Patrón {pattern.name}
+            </b>
           </h2>
           <h3>
             Elige el material y los colores de cada hilo con ayuda de estos
             modelos:
           </h3>
         </div>
-        <Templates pattern={pattern} onClick={handleSelectedTemplate} />
+        <Templates
+          pattern={pattern}
+          onClick={handleSelectedTemplate}
+          selectedTemplate={selectedTemplate}
+        />
       </div>
       <div className="sel-details-container">
         <div className="sel-details">
@@ -39,8 +46,12 @@ export const SelectDetails = () => {
             isBig={true}
             brImg={getBraceletImgFromTemplates(selectedTemplate)}
           />
-          <KnotDetails selectedTemplate={getBraceletFromId(selectedTemplate)}></KnotDetails>
-          <KnotDetails isInput={true}></KnotDetails>
+          <KnotDetails
+            selectedTemplate={getBraceletFromId(selectedTemplate)}
+          ></KnotDetails>
+          <KnotDetails
+            isInput={true}
+          ></KnotDetails>
         </div>
         <div className="buttons-container">
           <Button
