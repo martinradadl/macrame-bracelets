@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { NewBraceletContext } from "../context/new-bracelet-form-context";
 import { knots } from "../data/example";
 import { ColorPicker } from "./color-picker";
+import { getCordWidth, priceCalculator } from "../data/helpers";
 
 const createArray = (beg, end) => {
   const array = [];
@@ -22,9 +23,8 @@ const createInitialColorArray = (numThreads) => {
 
 export const NewBraceletForm = (props) => {
   const { onHandleColorChange } = props;
-  const {newBracelet} = useContext(NewBraceletContext)
-  const { knot, pattern } = newBracelet
-
+  const { newBracelet, handleChangeMaterial } = useContext(NewBraceletContext);
+  const { knot, pattern } = newBracelet;
   const [selectedNumThreads, setselectedNumThreads] = useState(4);
   return (
     <div class="model-details">
@@ -32,13 +32,19 @@ export const NewBraceletForm = (props) => {
       <p class="material">
         <b>Material:</b>
       </p>
-      <select class="knot-details" id="material-selector">
+      <select
+        class="knot-details"
+        id="material-selector"
+        value={newBracelet.material}
+        onChange={handleChangeMaterial}
+      >
         <option value="Hilo Chino">Hilo Chino</option>
-        <option value="Hilo Vibora">Hilo Víbora</option>
+        <option value="Hilo Víbora">Hilo Víbora</option>
         <option value="Cordón">Cordón</option>
       </select>
       <p class="knot-details" id="cord-width">
-        <b>Ancho Hilo: </b>2 mm
+        <b>Ancho Hilo: </b>
+        {getCordWidth(newBracelet.material)}
       </p>
       {knot.name === knots.feston.name ? (
         <div className="select-num-cords-container">
@@ -50,11 +56,19 @@ export const NewBraceletForm = (props) => {
             value={selectedNumThreads}
             onChange={(e) => setselectedNumThreads(e.target.value)}
           >
-            {numCordsArray.map((num,index) => {
+            {numCordsArray.map((num, index) => {
               if (num % 2 === 0 && pattern.name === "Flechas") {
-                return <option value={num} key={index}>{num}</option>;
+                return (
+                  <option value={num} key={index}>
+                    {num}
+                  </option>
+                );
               } else if (pattern.name !== "Flechas") {
-                return <option value={num} key={index}>{num}</option>;
+                return (
+                  <option value={num} key={index}>
+                    {num}
+                  </option>
+                );
               } else {
                 return null;
               }
@@ -68,11 +82,22 @@ export const NewBraceletForm = (props) => {
       </p>
       <div className="colors-list">
         {createInitialColorArray(
-          pattern.numThreads === undefined ? selectedNumThreads : pattern.numThreads
-        ).map(() => {
-          return <ColorPicker onHandleColorChange={onHandleColorChange} />;
+          pattern.numThreads === undefined
+            ? selectedNumThreads
+            : pattern.numThreads
+        ).map((_color, index) => {
+          return <ColorPicker index={index} key={index} />;
         })}
       </div>
+      <p class="knot-details" id="bracelet-price">
+        <b>Precio: </b>
+        {priceCalculator(
+          knot,
+          pattern.name,
+          false,
+          knot.name === "Festón" ? selectedNumThreads : 1
+        )}
+      </p>
     </div>
   );
 };

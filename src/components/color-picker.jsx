@@ -8,13 +8,9 @@ import { useContext } from "react";
 import { NewBraceletContext } from "../context/new-bracelet-form-context";
 
 export const ColorPicker = (props) => {
-  const { onHandleColorChange } = props;
-  const temp = useContext(NewBraceletContext)
-  const [selectedColor, setSelectedColor] = useState();
-  const handleOnClick = (color) => {
-    setSelectedColor(color);
-  };
-
+  const {  index } = props;
+  const { newBracelet, handleChangeColor } = useContext(NewBraceletContext);
+  const selectedColor = newBracelet.colors[index]
   return (
     <div>
       <Carousel
@@ -27,9 +23,9 @@ export const ColorPicker = (props) => {
         itemTemplate={(color) => {
           return (
             <CarouselColorSquare
-              onClick={()=>{handleOnClick(color)}}
+              onClick={()=>{handleChangeColor(color, index)}}
               color={color}
-              isSelected={selectedColor === color}
+              isSelected={JSON.stringify(selectedColor) === JSON.stringify(color)}
             />
           );
         }}
